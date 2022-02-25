@@ -1,0 +1,5 @@
+https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css
+
+https://cdnjs.com/libraries/font-awesome
+
+https://getbootstrap.com/docs/5.1/getting-started/introduction/
