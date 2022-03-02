@@ -3,4 +3,4 @@
 # Tools are used: HTML, CSS, Bootstrap and JavaScript
 
 # Project outcome
-<img src="Screenshot.png" ref="Project outcome">
+<img src="Screenshot.png" alt="Project outcome">
