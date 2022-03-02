@@ -2,11 +2,17 @@
 /* * {
     color: white;
 } */
+
+body{
+    background-image: url("lum3n--RBuQ2PK_L8-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .wrapper {
-    
     min-height: 100vh;
-    background: linear-gradient(to bottom,
+    /* background: linear-gradient(to bottom,
      rgb(224, 216, 217), rgb(83, 77, 77)
-    );
+    ); */
 }
 
