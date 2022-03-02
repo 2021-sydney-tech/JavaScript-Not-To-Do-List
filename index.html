@@ -12,6 +12,7 @@
 </head>
 <body>
     <div class="wrapper">
+
         <div class="container">
             <!-- page title-->
             <div class="row py-5 text-center">
@@ -21,22 +22,28 @@
             </div>
             
             <!-- form area-->
-            <form class="row row-cols-md-auto g-3 align-items-center">
-                <div class="col-12">
-                  <!-- <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label> -->
+            <form action="javascript:void(0)"
+            onsubmit = "handleOnSubmit(this)"
+            class="row row-cols-md-auto g-3 align-items-center">
+                
+                <!--form 1-->
+                 <div class="col-12">
                   <div class="input-group">
-                    <!-- <div class="input-group-text">@</div> -->
-                    <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+                    <input 
+                    name="task"
+                    type="text" class="form-control" placeholder="Username">
                   </div>
                 </div>
               
-              
-              
+                <!--form 2-->
                 <div class="col-12">
                     
                     <div class="input-group">
                      
-                      <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+                      <input 
+
+                      name = "hr"
+                      type="text" class="form-control" placeholder="Username">
                     </div>
                   </div>
               
@@ -60,48 +67,7 @@
                     <div>
                         <table class="table table-striped table-hover">
                            
-                            <tbody>
-                              <tr>
-                                <td>
-                                    <input type="checkbox" />
-                                </td>
-                                <td>watching tv</td>
-                                <td>5hr</td>
-                                <td>
-                                    <button class="btn btn-danger">
-                                        <i class="fa-solid fa-trash-can"></i></button>
-                                    <button class="btn btn-primary">
-                                        <i class="fa-solid fa-arrow-right"></i></button></td>
-                              </tr>
-                              
-
-                              <tr>
-                                <td>
-                                    <input type="checkbox" />
-                                </td>
-                                <td>watching tv</td>
-                                <td>5hr</td>
-                                <td>
-                                    <button class="btn btn-danger">
-                                        <i class="fa-solid fa-trash-can"></i></button>
-                                    <button class="btn btn-primary">
-                                        <i class="fa-solid fa-arrow-right"></i></button></td>
-                              </tr>
-
-
-
-                              <tr>
-                                <td>
-                                    <input type="checkbox" />
-                                </td>
-                                <td>watching tv</td>
-                                <td>5hr</td>
-                                <td>
-                                    <button class="btn btn-danger">
-                                        <i class="fa-solid fa-trash-can"></i></button>
-                                    <button class="btn btn-primary">
-                                        <i class="fa-solid fa-arrow-right"></i></button></td>
-                              </tr>
+                            <tbody id="task-list">
                               
                             </tbody>
                           </table>
@@ -119,52 +85,11 @@
                     <div>
                         <table class="table table-striped table-hover">
                            
-                            <tbody>
-                              <tr>
-                                <td>
-                                    <input type="checkbox" />
-                                </td>
-                                <td>watching tv</td>
-                                <td>5hr</td>
-                                <td>
-                                    <button class="btn btn-warning">
-                                        <i class="fa-solid fa-arrow-left"></i></button>
-                                    <button class="btn btn-danger">
-                                        <i class="fa-solid fa-trash-can"></i></button></td>
-                                    
-                              </tr>
+                            <tbody id="bad-list" >
                               
-
-                              <tr>
-                                <td>
-                                    <input type="checkbox" />
-                                </td>
-                                <td>watching tv</td>
-                                <td>5hr</td>
-                                <td>
-                                    <button class="btn btn-warning">
-                                        <i class="fa-solid fa-arrow-left"></i></button>
-                                    <button class="btn btn-danger">
-                                        <i class="fa-solid fa-trash-can"></i></button>
-                                    </td>
-                              </tr>
-
-                              <tr>
-                                <td>
-                                    <input type="checkbox" />
-                                </td>
-                                <td>watching tv</td>
-                                <td>5hr</td>
-                                <td>
-                                    <button class="btn btn-warning">
-                                        <i class="fa-solid fa-arrow-left"></i></button>
-                                    <button class="btn btn-danger">
-                                        <i class="fa-solid fa-trash-can"></i></button>
-                                    </td>
-                              </tr>
                               
                             </tbody>
-                          </table>
+                        </table>
 
 
                           
@@ -182,7 +107,7 @@
             <!--total hours-->
             <div class="row">
                 <div class="col">
-                    <h5>Total hours allocated = <span id="total-hr">50</span>Hrs </h5>
+                    <h5>Total hours allocated = <span id="total-hr">0</span>Hrs </h5>
                 </div>
             </div>
 

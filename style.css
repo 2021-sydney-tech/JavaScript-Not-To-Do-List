@@ -3,6 +3,7 @@
     color: white;
 } */
 .wrapper {
+    
     min-height: 100vh;
     background: linear-gradient(to bottom,
      rgb(224, 216, 217), rgb(83, 77, 77)
